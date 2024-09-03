@@ -18,11 +18,18 @@
 
 
     // Processamento e Saída de Dados
-    if (cao == "P") { // Porte pequeno
+    if (cao == "P" || cao == "p") { // Porte pequeno
         document.write(`A idade humana do seu cão é ${(idade*pequeno)} anos.`);                                
                                        
-    }
+    }else if (cao == "M" || cao == "m") {
+            document.write(`A idade humana do seu cão é ${(idade*medio)} anos.`);
+        
+    }else if (cao == "G" || cao == "g"){ 
+        document.write(`A idade humana do seu cão é ${(idade*grande)} anos.`);
+
+    }else {
+        document.write(`Porte inválido.`);
+
+    }    
     
-
-
 </script>
